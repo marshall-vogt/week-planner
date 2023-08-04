@@ -13,10 +13,24 @@
 
 .column-seventh {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-basis: calc(100% / 7);
 }
 
 .day-of-week {
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.week-btn {
+  flex-basis: 100%;
+}
+
+/* .click-count {
+  align-self: flex-end;
+} */
+
+.column-full {
+  width: 100%;
 }
