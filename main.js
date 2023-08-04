@@ -25,20 +25,17 @@ function closeModal(event) {
 const $entryForm = document.querySelector('form');
 $entryForm.addEventListener('submit', handleSubmit);
 const $selectTime = document.querySelector('#time-select');
+const $selectDay = document.querySelector('#day-select');
+const $notes = document.querySelector('textarea');
 
 function handleSubmit(event) {
   event.preventDefault();
 
-  const $timeSelected = $selectTime.value;
-
-  console.log('event:', event);
-  console.log('timeSelected', $timeSelected);
-  console.log('$selectTime.options:', $selectTime.options);
-  console.log('selectTime.selectIndex:', $selectTime.selectedIndex);
-  /*
   const eventValues = {
-    time: ,
-    day:  ,
-    notes:
-  } */
+    time: $selectTime.value,
+    day: $selectDay.value,
+    notes: $notes.value
+  };
+  console.log('eventValues:', eventValues);
+  console.log('$notes:', $notes);
 }
