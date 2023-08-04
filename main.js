@@ -1,8 +1,14 @@
-const $addActivity = document.querySelector('.week-btn');
+// const $addActivity = document.querySelector('.week-btn');
 
-$addActivity.addEventListener('click', addActivity);
+document.addEventListener('click', addActivity);
+
 function addActivity(event) {
-  openModal();
+  console.log('event:', event);
+  if (event.target.tagName === 'BUTTON') {
+    openModal();
+  } else {
+    closeModal();
+  }
 }
 
 const $overlay = document.querySelector('.overlay');
