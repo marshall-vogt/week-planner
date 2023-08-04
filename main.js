@@ -5,7 +5,11 @@ document.addEventListener('click', addActivity);
 function addActivity(event) {
   console.log('event:', event);
   if (event.target.tagName === 'BUTTON') {
-    openModal();
+    if (event.target.textContent === 'Time' || event.target.textContent === 'Day') {
+    // add code hurr
+    } else {
+      openModal();
+    }
   } else {
     closeModal();
   }
