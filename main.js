@@ -24,10 +24,17 @@ function closeModal(event) {
 
 const $entryForm = document.querySelector('form');
 $entryForm.addEventListener('submit', handleSubmit);
+const $selectTime = document.querySelector('#time-select');
 
 function handleSubmit(event) {
   event.preventDefault();
+
+  const $timeSelected = $selectTime.value;
+
   console.log('event:', event);
+  console.log('timeSelected', $timeSelected);
+  console.log('$selectTime.options:', $selectTime.options);
+  console.log('selectTime.selectIndex:', $selectTime.selectedIndex);
   /*
   const eventValues = {
     time: ,
