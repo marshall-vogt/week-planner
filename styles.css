@@ -1,6 +1,6 @@
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 .shown {
   display: block;
@@ -47,4 +47,29 @@ h1 {
 table {
   border: 1px solid;
   margin: 15px auto;
+}
+
+.modal {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time-and-day {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-button,
+.day-button {
+  width: 100%;
+  margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.notes-text {
+  width: 100%;
 }
