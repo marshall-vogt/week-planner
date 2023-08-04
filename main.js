@@ -10,7 +10,7 @@ function addActivity(event) {
     } else {
       openModal();
     }
-  } else {
+  } else if (event.target.tagName === 'I') {
     closeModal();
   }
 }

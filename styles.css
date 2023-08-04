@@ -1,11 +1,3 @@
-/* .hidden {
-  display: none;
-} */
-
-.shown {
-  display: block;
-}
-
 .container {
   margin: 0 auto;
   max-width: 850px;
@@ -55,6 +47,7 @@ table {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+  margin: 10px;
 }
 
 .time-and-day {
@@ -71,5 +64,46 @@ table {
 }
 
 .notes-text {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
   width: 100%;
+  text-align: center;
+}
+
+i {
+  color: red;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.submit-button {
+  background-color: pink;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
 }
