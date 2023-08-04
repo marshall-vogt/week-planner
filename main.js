@@ -1,15 +1,10 @@
-// const $addActivity = document.querySelector('.week-btn');
 
 document.addEventListener('click', addActivity);
 
 function addActivity(event) {
   console.log('event:', event);
   if (event.target.tagName === 'BUTTON') {
-    if (event.target.textContent === 'Time' || event.target.textContent === 'Day') {
-    // add code hurr
-    } else {
-      openModal();
-    }
+    openModal();
   } else if (event.target.tagName === 'I') {
     closeModal();
   }
