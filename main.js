@@ -27,15 +27,35 @@ $entryForm.addEventListener('submit', handleSubmit);
 const $selectTime = document.querySelector('#time-select');
 const $selectDay = document.querySelector('#day-select');
 const $notes = document.querySelector('textarea');
+const $tHead = document.querySelector('thead');
 
 function handleSubmit(event) {
   event.preventDefault();
-
   const eventValues = {
     time: $selectTime.value,
     day: $selectDay.value,
     notes: $notes.value
   };
-  console.log('eventValues:', eventValues);
-  console.log('$notes:', $notes);
+  $tHead.append(renderEntry(eventValues));
+}
+
+function renderEntry(entry) {
+  const $tr = document.createElement('tr');
+  const $td1 = document.createElement('td');
+  const $td2 = document.createElement('td');
+  const $td3 = document.createElement('td');
+  const $td4 = document.createElement('td');
+  const $button1 = document.createElement('button');
+  const $button2 = document.createElement('button');
+  $button1.setAttribute('class', 'delete-button');
+  $button2.setAttribute('class', 'edit-button');
+  $tr.appendChild($td1);
+  $tr.appendChild($td2);
+  $tr.appendChild($td3);
+  $tr.appendChild($td4);
+  $td3.appendChild($button1);
+  $td4.appendChild($button2);
+  $td1.textContent = entry.time;
+  $td2.textContent = entry.notes;
+  return $tr;
 }
