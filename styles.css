@@ -1,0 +1,22 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.week {
+  border: 1px solid black;
+}
+
+.column-seventh {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: calc(100% / 7);
+}
+
+.day-of-week {
+  border: 1px solid black;
+}

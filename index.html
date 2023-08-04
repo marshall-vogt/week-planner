@@ -13,8 +13,7 @@
         <h1>Weekly Planner</h1>
       </div>
     </div>
-
-    <div class="row">
+    <div class="row week">
       <div class="column-seventh">
         <div class="day-of-week">
           <button>Sunday</button>
@@ -46,13 +45,15 @@
         </div>
       </div>
     </div>
-
+    <div class="overlay hidden"></div>
     <div class="row">
-      <div class="overlay">
-
+      <div class="modal hidden">
+        <h2>Add Event</h2>
+        <button type="button" class="time-button column-half">Time</button>
+        <button type="button" class="day-button column-half">Day</button>
+        <textarea class="column-full" cols="10" rows="5" placeholder="Notes"></textarea>
       </div>
     </div>
-
     <div class="row">
       <div class="column-full">
         <table>
@@ -68,7 +69,7 @@
             <tr>
               <td></td>
               <td></td>
-              <td><button class="delete-button">Yes</button></td>
+              <td><button class="delete-button hidden">Yes</button></td>
               <td></td>
             </tr>
             <tr>
