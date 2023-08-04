@@ -2,7 +2,6 @@
 document.addEventListener('click', addActivity);
 
 function addActivity(event) {
-  console.log('event:', event);
   if (event.target.tagName === 'BUTTON') {
     openModal();
   } else if (event.target.tagName === 'I') {
@@ -21,4 +20,18 @@ function openModal(event) {
 function closeModal(event) {
   $overlay.className = 'overlay hidden';
   $modal.className = 'modal hidden';
+}
+
+const $entryForm = document.querySelector('form');
+$entryForm.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  console.log('event:', event);
+  /*
+  const eventValues = {
+    time: ,
+    day:  ,
+    notes:
+  } */
 }
