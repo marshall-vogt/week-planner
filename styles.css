@@ -2,6 +2,10 @@
   display: none;
 }
 
+.shown {
+  display: block;
+}
+
 .container {
   margin: 0 auto;
   max-width: 850px;
@@ -13,7 +17,6 @@ h1 {
 }
 
 .week {
-  border: 1px solid black;
 }
 
 .column-seventh {
@@ -26,7 +29,6 @@ h1 {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .week-btn {
