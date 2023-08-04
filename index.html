@@ -53,7 +53,17 @@
           <i class="fa-solid fa-x">&#10006;</i>
         </div>
         <div class="time-and-day">
-          <button type="button" class="time-button column-half">Time</button>
+          <label for="time-select">Time
+            <select id="time-select">
+              <option value="" disabled>Select time</option>
+              <option value="8">8:00am</option>
+              <option value="9">9:00am</option>
+              <option value="10" >10:00am</option>
+              <option value="11" >11:00am</option>
+              <option value="12" >12:00pm</option>
+            </select>
+          </label>
+
           <button type="button" class="day-button column-half">Day</button>
         </div>
         <div class="notes-text">
